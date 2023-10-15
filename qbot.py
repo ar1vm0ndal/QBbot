@@ -167,7 +167,7 @@ async def on_message(message):
     elif buzz == True and ((idcall in redList) or (idcall in blueList) or (idcall in players.keys())):
 
         if message.content.upper().strip() == getTAnswer(q_num).upper().strip():
-            await message.channel.send("You are motherfucking right")
+            await message.channel.send("You are right")
 
             buzz = False
         else:
